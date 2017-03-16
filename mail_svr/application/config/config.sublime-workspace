@@ -1,0 +1,558 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"g",
+				"gulp"
+			],
+			[
+				"sc",
+				"src"
+			],
+			[
+				"a",
+				"app"
+			],
+			[
+				"f",
+				"foundation"
+			],
+			[
+				"p",
+				"pipe"
+			],
+			[
+				"gulp",
+				"gulp-concat"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"t",
+				"test"
+			],
+			[
+				"get",
+				"getViewModel"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"ge",
+				"getViewModel"
+			],
+			[
+				"b",
+				"batas"
+			],
+			[
+				"st",
+				"styleArray"
+			],
+			[
+				"to",
+				"total_keluar"
+			],
+			[
+				"total",
+				"total_masuk"
+			],
+			[
+				"tu",
+				"tu_surat"
+			],
+			[
+				"id",
+				"id_pengolah"
+			],
+			[
+				"la",
+				"layout"
+			],
+			[
+				"L",
+				"lookupReference"
+			],
+			[
+				"se",
+				"setValue"
+			],
+			[
+				"lo",
+				"lookupReference"
+			],
+			[
+				"c",
+				"change"
+			],
+			[
+				"d",
+				"displayfield"
+			],
+			[
+				"fie",
+				"fieldLabel"
+			],
+			[
+				"curr",
+				"current_user_session_id"
+			],
+			[
+				"enc",
+				"enc_data"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"_",
+				"_do_logout"
+			],
+			[
+				"S",
+				"Security"
+			],
+			[
+				"pri",
+				"private"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"last_filter": "Package Control: re",
+		"selected_items":
+		[
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"Git",
+				"Git: Push"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 164.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/webroot/lab_2014_svr/fuel/app/classes/controller/cetak.php",
+		"/C/repo/Tiza.Soka/Main/src/Tiza.Pawon.Presentation.Shell/Logs/log.txt",
+		"/C/repo/Tiza.Soka/Main2/src/Tiza.Pawon.Presentation.Shell/Config/Database/Soka.cfg.xml",
+		"/D/webroot/foundationproject/public/index.html",
+		"/C/Users/ASUS/Downloads/sidebar.html",
+		"/D/TIZA/defect/list",
+		"/C/repo/Tiza.Soka/Main/src/Tiza.Pawon.Presentation.Shell/Config/Database/Soka.cfg.xml",
+		"/D/webroot/foundationproject/assets/scripts/app.js",
+		"/D/webroot/foundationproject/gulpfile.js",
+		"/D/webroot/WebProject/application/views/admin/users/list.php",
+		"/D/webroot/CodeIgniter/composer.json",
+		"/D/webroot/WebProject/application/views/admin/dashboard.php",
+		"/D/webroot/foundationproject/public/js/app.js",
+		"/D/webroot/foundationproject/assets/styles/app.scss",
+		"/C/Users/ASUS/AppData/Roaming/Sublime Text 3/Packages/User/SassBeautify.sublime-settings",
+		"/C/Users/ASUS/AppData/Roaming/Sublime Text 3/Packages/SassBeautify/SassBeautify.sublime-settings",
+		"/D/webroot/foundationproject/assets/styles/foundation/_settings.scss",
+		"/D/webroot/foundationproject/public/css/app.css",
+		"/D/webroot/foundationproject/assets/style/app.scss",
+		"/D/webroot/WebProject/ci3-fire-starter/application/config/config.php",
+		"/D/webroot/WebProject/ci3-fire-starter/application/config/core.php",
+		"/D/webroot/WebProject/ci3-fire-starter/application/config/database.php",
+		"/D/webroot/WebProject/ci3-fire-starter/htdocs/index.php",
+		"/D/webroot/WebProject/ci3-fire-starter/htdocs/.htaccess",
+		"/C/Users/ASUS/AppData/Roaming/Sublime Text 3/Packages/User/GitHub.sublime-settings",
+		"/D/webroot/SEDMS2/mail_svr/application/controllers/surat.php",
+		"/D/webroot/SEDMS2/mail_svr/application/controllers/cetak.php",
+		"/D/webroot/SEDMS2/build/production/Mail/index.html",
+		"/D/webroot/SEDMS2/build/production/Mail/mail_svr/application/config/config.php",
+		"/C/Users/ASUS/Downloads/index.html",
+		"/D/webroot/SEDMS2/mail_svr/application/controllers/laporan.php",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/base/DetailMasuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/base/DetailMasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/window/VerifikasiController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/form/KeluarController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/window/MasukController.js",
+		"/D/webroot/SEDMS2/mail_svr/application/controllers/notifikasi.php",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/window/Masuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/window/MasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/window/MasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/window/Masuk.js",
+		"/D/webroot/SEDMS2/Mail/app/controller/Security.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/menu/MenuPengguna.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/window/MasukAtasanController.js",
+		"/D/webroot/SEDMS2/mail_svr/application/controllers/unker.php",
+		"/D/webroot/SEDMS2/dynamicmenu.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/menu/MenuPenggunaController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/menu/MenuPenggunaModel.js",
+		"/D/webroot/SEDMS2/mail_svr/application/controllers/login.php",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/menu/MenuAdmController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/menu/MenuAdm.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/menu/MenuOpr.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/menu/MenuOprController.js",
+		"/D/webroot/SEDMS2/build/production/Mail/mail_svr/application/config/database.php",
+		"/D/GIS Projects/PDAM Samarinda/GIS_Tirta_Kencana_Samarinda2 (2) (2).qgs",
+		"/C/Users/ASUS/Downloads/User_Admin_Privilages.sql",
+		"/D/webroot/SEDMS2/dynamicmenu.php",
+		"/D/GIS Projects/PDAM Samarinda/GIS Tirta Kencana Samarinda2.qgs",
+		"/D/GIS Projects/PDAM Samarinda/GIS_Tirta_Kencana_Samarinda2.qgs",
+		"/D/GIS Projects/PDAM Samarinda/GIS_Tirta_Kencana_Samarinda2 - Copy.qgs",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/window/Verifikasi.js",
+		"/D/webroot/SEDMS2/Mail/resources/custom-style.css",
+		"/D/webroot/SEDMS2/catatan.txt",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/laporan/form/Panel.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/laporan/form/PanelController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/laporan/form/PanelModel.js",
+		"/D/webroot/SEDMS2/mail_svr/application/config/config.php",
+		"/D/webroot/PHPExcel/Examples/06largescale.php",
+		"/D/webroot/SEDMS2/db_note.txt",
+		"/D/webroot/PHPExcel/Examples/01simple.php",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/form/MasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/window/Unarchived.js",
+		"/D/webroot/SEDMS2/Mail/resources/icons.css",
+		"/D/webroot/SEDMS2/Mail/app/controller/Mail.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/laporan/form/Panel.php",
+		"/D/webroot/SEDMS2/mail_svr/application/libraries/PHPExcel.php",
+		"/C/Users/ASUS/Downloads/PHPExcel_1.8.0_doc/Examples/06largescale.php",
+		"/C/Users/ASUS/Downloads/PHPExcel_1.8.0_doc/Examples/05featuredemo.php",
+		"/C/Users/ASUS/Downloads/PHPExcel_1.8.0_doc/Examples/01simple.php",
+		"/C/Users/ASUS/Downloads/PHPExcel_1.8.0_doc/Examples/01simple-download-xlsx.php",
+		"/C/Users/ASUS/Downloads/PHPExcel_1.8.0_doc/Examples/28iterator.php",
+		"/C/Users/ASUS/Downloads/PHPExcel_1.8.0_doc/install.txt",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/window/UnarchivedController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/window/Archived.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/Unarchived.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/window/ArchivedController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/ArchivedController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/UnarchivedController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/window/Relasi.js",
+		"/D/webroot/SEDMS2/mail_svr/application/models/login_model.php",
+		"/D/webroot/SEDMS2/mail_svr/application/models/karsip_model.php",
+		"/D/webroot/SEDMS2/mail_svr/application/models/notadinas_model.php",
+		"/D/webroot/SEDMS2/mail_svr/application/models/unker_model.php",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/monitor/Masuk.js",
+		"/D/webroot/SEDMS2/mail_svr/application/controllers/pengguna.php",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/Final.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/FinalController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/Masuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/MasukController.js",
+		"/C/Users/ASUS/Downloads/PHPExcel_1.8.0_doc/Documentation/Examples/index.php",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/monitor/FinalController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/monitor/Final.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/konsep/grid/monitor/MasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/monitor/KeluarController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/monitor/Keluar.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/monitor/MasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/monitor/Masuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/Keluar.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/KeluarController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/Masuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/disposisi/grid/MasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/grid/KeluarController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/grid/Keluar.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/Archived.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/Relasi.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/RelasiController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/Jra.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/arsip/grid/JraController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/grid/Masuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/form/Keluar.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/surat/grid/OprMasuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/grid/KeluarController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/grid/MasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/grid/OprMasuk.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/grid/Unclassified.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/grid/Verifikasi.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/grid/OprMasukController.js",
+		"/D/webroot/SEDMS2/Mail/app/module/mail/nodin/grid/UnclassifiedController.js"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\webroot\\SEDMS2\\mail_svr\\application\\controllers",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module\\mail\\surat",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module\\mail\\surat\\form",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module\\mail\\surat",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module",
+			"D:\\webroot\\SEDMS2\\mail_svr\\application\\controllers",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module\\mail\\surat",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module",
+			"D:\\webroot\\SEDMS2\\ext\\src",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module",
+			"D:\\webroot\\SEDMS2\\Mail",
+			"D:\\webroot\\SEDMS2\\Mail\\app\\module\\mail\\surat\\window",
+			"D:\\webroot\\SEDMS2\\Mail"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"top bar",
+			"deleted_at",
+			"reset",
+			"params",
+			"extraparams",
+			"mnSurat",
+			"getStore()",
+			"host=172.16.176.3",
+			"mm",
+			"12,5	",
+			"gisadmincirebonrole",
+			"host=192.168.100.251",
+			"host=gispdam.net",
+			"host=192.168.100.251",
+			"case",
+			"date",
+			"tahun",
+			"date",
+			"isi_ring",
+			"cetak",
+			"test",
+			"klasi",
+			"date",
+			"metadata surat",
+			"diarsipkan",
+			"archive",
+			"archid",
+			"arc",
+			"non",
+			"nonIn",
+			"non",
+			"clea",
+			"searchfield",
+			"MetadataMasuk",
+			"bawahan_2",
+			"upda",
+			"method:'post",
+			"post",
+			"method:'post",
+			".x-form-trigger",
+			"$data['uniquecode'] = random_string('alnum', 6);",
+			"uniq",
+			"renderer",
+			"daterenderer",
+			"arsip",
+			"non",
+			"renderer",
+			"adminarchive",
+			",{\n            margin:'5px 0 0 0',\n            iconCls:'icon_archive_36',text:'Arsip Surat',\n            listeners:{\n                click:'on_archive'\n            }\n        }",
+			"'];\n",
+			"GridPenggunaAdmin",
+			"host=10.10.10.8",
+			"gisadmincirebonrole",
+			"host=192.168.0.101",
+			"localhost",
+			"password",
+			"uniquecode",
+			"uni",
+			"public $",
+			"library",
+			"();\n",
+			")\n	",
+			"get",
+			"	\n",
+			"response"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"host=gispdam.homeip.net",
+			"gisadminsmd",
+			"host=172.16.176.3",
+			"host=gispdam.net",
+			"host=localhost",
+			"perpipaanoperatorrole",
+			"pelangganperatorrole",
+			"host=10.10.10.8",
+			"192.168.0.101",
+			"$this->",
+			"){"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "config.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\webroot\\SEDMS3\\SEDMS3_All.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

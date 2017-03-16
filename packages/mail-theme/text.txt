@@ -1,0 +1,62 @@
+Sencha Cmd v6.0.0.202
+[INF] Processing Build Descriptor : default
+[INF] Writing concatenated output to file D:\webroot\SEDMS2\packages\mail-theme\build\mail-theme-debug.js
+[INF] Compressing data with YuiJavascriptCompressor
+[INF] Writing concatenated output to file D:\webroot\SEDMS2\packages\mail-theme\build\mail-theme.js
+[INF] writing sass content to D:\webroot\SEDMS2\packages\mail-theme\build\\mail-theme-all-rtl-debug.scss
+[INF] writing sass content to D:\webroot\SEDMS2\packages\mail-theme\build\\mail-theme-all-debug.scss
+[INF] executing compass using system installed ruby runtime
+overwrite resources/mail-theme-all-debug.css 
+overwrite resources/mail-theme-all-rtl-debug.css 
+[INF] writing sass content to D:\webroot\SEDMS2\build\temp\mail-theme\slicer-temp\mail-theme-all-rtl-debug.scss.tmp
+[INF] writing sass content to D:\webroot\SEDMS2\build\temp\mail-theme\slicer-temp\config.rb
+[INF] executing compass using system installed ruby runtime
+   remove .sass-cache/ 
+   remove mail-theme-all-rtl-debug.css 
+   create mail-theme-all-rtl-debug.css 
+[INF] Writing content to D:\webroot\SEDMS2\packages\mail-theme\sass\example\bootstrap.json
+[INF] Writing content to D:\webroot\SEDMS2\packages\mail-theme\sass\example\bootstrap.js
+[INF] Capturing theme image
+[ERR] loading page D%3A/webroot\SEDMS2\packages\mail-theme/sass/example/theme.html
+registering ready listener...
+== Unhandled Error ==
+TypeError: '''undefined''' is not an object (evaluating '''domPublisher.directEvents''')
+
+  :335 in Ext.event.Dispatcher#doAddListener
+  :314 in Ext.event.Dispatcher#addListener
+  :507 in Ext.mixin.Observable#addDispatcherListener
+  :491 in Ext.mixin.Observable#doAddListener
+  :1361 in Ext.dom.Element#doAddListener
+  :633 in Ext.mixin.Observable#changeListener
+  :822 in Ext.mixin.Observable#addListener
+  :1004 in Ext.mixin.Observable#on
+  :4142
+  :271
+  :313
+  :445
+  :761
+  :906
+  :592
+  :477
+  :733
+  :906
+  :649
+  :927
+  :906
+  :1381
+  :1295
+  :1069
+
+[ERR] 
+[ERR] BUILD FAILED
+[ERR] com.sencha.exceptions.ExProcess: phantomjs process exited with code 2
+[ERR] 
+[ERR] Total time: 1 minute 12 seconds
+[ERR] The following error occurred while executing this line:
+D:\webroot\SEDMS2\packages\mail-theme\.sencha\package\build-impl.xml:206: The following error occurred while executing this line:
+D:\webroot\SEDMS2\packages\mail-theme\.sencha\package\slice-impl.xml:138: com.sencha.exceptions.ExProcess: phantomjs process exited with code 2
+[ERR] 
+The application was last modified by an older version of Sencha Cmd (5.0.1.231)
+the current is 6.0.0.202.
+Please run "sencha package upgrade" to update to 6.0.0.202.
+

@@ -1,0 +1,6 @@
+.x-body{
+	background-color: #C5C9E6
+}
+#header{background-image: url('header-background.png');background-position: left;background-repeat: no-repeat;z-index: 999;height: 75px}
+#header-text{text-align:left;padding-top:22px;padding-left:120px;font-weight:bold;font-size:20px;color:#fff;text-shadow: 0 1px 0 #00C556;}
+#verifikasi-boxLabelEl{color:#FCD209;}

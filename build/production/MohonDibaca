@@ -1,0 +1,17 @@
+
+1. periksa kembali file yang telah diberi modul pengamanan.
+2. periksa kembali konfigurasi di file 
+	a. index.html
+		<script>
+	        var serverURL='http://192.168.201.138/mail_svr/index.php/';
+	        var uploadURL='http://192.168.201.138/upload/';
+	    </script>
+	b. mail_svr/application/config/config.php
+		$config['template_path']
+		$config['upload_path']
+	c. mail_svr/application/config/database.php
+		pastikan password dan port ke 5432
+
+rgds,
+
+Benny E. Willyanto

@@ -1,0 +1,143 @@
+Sencha Cmd 6.0.0.202 - Crash report
+================================================
+An error occurred while executing the following command: build app
+
+Diagnostic information:
+=======================
+                         app.archivePath : archive                                           
+                      app.bootstrap.base : D:\webroot\SEDMS2\Mail                            
+                       app.bootstrap.css : bootstrap.css                                     
+                  app.bootstrap.manifest : bootstrap.json                                    
+               app.bootstrap.microloader : bootstrap.js                                      
+                           app.classpath : D:\webroot\SEDMS2\Mail/app                        
+                         app.cmd.version : 5.1.0.26                                          
+                          app.config.dir : D:\webroot\SEDMS2\Mail\.sencha\app                
+                   app.cordova.config.id : com.domain.Mail                                   
+                 app.cordova.config.name : Mail                                              
+                 app.cordova.config.path : D:\webroot\SEDMS2\Mail/cordova                    
+               app.cordova.config.target :                                                   
+              app.cordova.config.verbose : false                                             
+                   app.cordova.js.0.path : cordova.js                                        
+               app.cordova.js.0.priority : 1000                                              
+                 app.cordova.js.0.remote : true                                              
+                   app.cordova.js.length : 1                                                 
+                 app.cordova.microloader : D:\webroot\SEDMS2\Mail\.sencha\app/Microloader.js 
+                 app.cordova.output.base : D:\webroot\SEDMS2\Mail/cordova/www                
+         app.cordova.output.cache.enable : false                                             
+        app.cordova.output.deltas.enable : false                                             
+                                 app.dir : D:\webroot\SEDMS2\Mail                            
+                           app.framework : ext                                               
+                   app.framework.version : 5.0.1.1255                                        
+                                  app.id : aacb48f4-66e8-4fdc-8ac1-8dd84f3fc966              
+                       app.indexHtmlPath : index.html                                        
+                        app.loader.cache : true                                              
+                              app.locale : id                                                
+                                app.name : Mail                                              
+                         app.output.base : D:\webroot\SEDMS2/build/${build.environment}/Mail 
+                 app.output.cache.enable : false                                             
+                app.output.deltas.enable : false                                             
+           app.output.microloader.enable : true                                              
+                           app.overrides : D:\webroot\SEDMS2\Mail/overrides                  
+                           app.page.name : index.html                                        
+                  app.phonegap.config.id : com.domain.Mail                                   
+                app.phonegap.config.name : Mail                                              
+                app.phonegap.config.path : D:\webroot\SEDMS2\Mail/phonegap                   
+              app.phonegap.config.remote : false                                             
+             app.phonegap.config.verbose : false                                             
+                  app.phonegap.js.0.path : phonegap.js                                       
+              app.phonegap.js.0.priority : 1000                                              
+                app.phonegap.js.0.remote : true                                              
+                  app.phonegap.js.length : 1                                                 
+                app.phonegap.microloader : D:\webroot\SEDMS2\Mail\.sencha\app/Microloader.js 
+                app.phonegap.output.base : D:\webroot\SEDMS2\Mail/phonegap/www               
+        app.phonegap.output.cache.enable : false                                             
+       app.phonegap.output.deltas.enable : false                                             
+          app.production.compressor.type : yui                                               
+                      app.requires.names : sencha-core,ext,ext-locale                        
+                   app.requires.packages : D:\webroot\SEDMS2\ext\packages\sencha-core,D:\webroot\SEDMS2\ext,D:\webroot\SEDMS2\ext\packages\ext-locale
+                      app.resource.paths : D:\webroot\SEDMS2\Mail/resources                  
+                        app.sass.etcpath : D:\webroot\SEDMS2\Mail/sass/etc/all.scss          
+                      app.sass.namespace : Mail                                              
+                        app.sass.srcpath : D:\webroot\SEDMS2\Mail/sass/src                   
+                        app.sass.varpath : D:\webroot\SEDMS2\Mail/sass/var                   
+        app.slicer.js.0.isWidgetManifest : true                                              
+                    app.slicer.js.0.path : D:\webroot\SEDMS2\Mail/sass/example/custom.js     
+                    app.slicer.js.length : 1                                                 
+         app.testing.output.cache.enable : false                                             
+        app.testing.output.deltas.enable : false                                             
+                               app.theme : mail-theme                                        
+                    buildenvironment.dir : D:\webroot\SEDMS2\Mail                            
+               buildenvironment.load.dir : D:\webroot\SEDMS2\Mail                            
+                          cmd.config.dir : C:\Users\Benny E. Willyanto\bin\Sencha\Cmd\6.0.0.202
+                                 cmd.dir : C:\Users\Benny E. Willyanto\bin\Sencha\Cmd\6.0.0.202
+                    cmd.framework.minver : 5.0.0                                             
+                   cmd.framework.version : 5.4.99.9999                                       
+                            cmd.jvm.args : -Xms128m -Xmx1024m -Dapple.awt.UIElement=true     
+              cmd.merge.tool.args.araxis : -wait -merge -3 -a1 {base} {user} {generated} {out}
+              cmd.merge.tool.args.kdiff3 : {base} {user} {generated} -o {out}                
+             cmd.merge.tool.args.p4merge : {base} {user} {generated} {out}                   
+           cmd.merge.tool.args.smartsync : {user} {generated} {base}                         
+          cmd.merge.tool.args.sourcegear : --merge --result={out} {user} {base} {generated}  
+            cmd.merge.tool.args.tortoise : -base:{base} -theirs:{generated} -mine:{user} -merged:{out}
+                              cmd.minver : 3.0.0.0                                           
+                            cmd.platform : windows                                           
+                         cmd.server.port : 1841                                              
+                     cmd.unicode.escapes : C:\Users\Benny E. Willyanto\bin\Sencha\Cmd\6.0.0.202/unicode-escapes.json
+                             cmd.version : 6.0.0.202                                         
+                            cmd.web.port : 1841                                              
+                      config.skipInherit : false                                             
+                                 ext.dir : D:\webroot\SEDMS2/ext                             
+                        ext.license.name : gpl                                               
+                     framework.classpath : D:\webroot\SEDMS2\ext/src                         
+                    framework.cmd.minver : 4.0.0                                             
+                   framework.cmd.version : 5.0.0.53                                          
+                 framework.compatVersion : 4.0                                               
+                    framework.config.dir : C:\Users\Benny E. Willyanto\bin\Sencha\Cmd\6.0.0.202\plugins\ext\5.1
+                       framework.creator : Sencha                                            
+           framework.detailedDescription : Sencha Ext JS JavaScript Framework                
+                           framework.dir : D:\webroot\SEDMS2\ext                             
+                        framework.format : 1                                                 
+                          framework.isV5 : true                                              
+                         framework.local : true                                              
+                          framework.name : ext                                               
+                  framework.packages.dir : D:\webroot\SEDMS2\ext/packages                    
+                       framework.summary : Ext JS                                            
+                          framework.type : framework                                         
+                       framework.version : 5.0.1.1255                                        
+                             locale.name : id                                                
+                          repo.local.dir : C:\Users\Benny E. Willyanto\bin\Sencha\Cmd\repo   
+        system.java.net.useSystemProxies : true                                              
+                        theme.base.names : ext-theme-base,ext-theme-neutral,ext-theme-neptune,ext-theme-crisp,mail-theme
+                     theme.base.packages : D:\webroot\SEDMS2\ext\packages\ext-theme-base,D:\webroot\SEDMS2\ext\packages\ext-theme-neutral,D:\webroot\SEDMS2\ext\packages\ext-theme-neptune,D:\webroot\SEDMS2\ext\packages\ext-theme-crisp,D:\webroot\SEDMS2\packages\mail-theme
+                              theme.name : mail-theme                                        
+                     workspace.build.dir : D:\webroot\SEDMS2/build                           
+                   workspace.cmd.version : 5.1.0.26                                          
+                    workspace.config.dir : D:\webroot\SEDMS2\.sencha\workspace               
+                           workspace.dir : D:\webroot\SEDMS2                                 
+                  workspace.packages.dir : D:\webroot\SEDMS2/packages                        
+                     workspace.theme.dir : D:\webroot\SEDMS2/packages/${args.themeName}      
+
+Exception information:
+=======================
+java.lang.NullPointerException
+     at java.io.File.<init>(Unknown Source)
+     at com.sencha.util.FileUtil.readFile(FileUtil.java:157)
+     at com.sencha.tools.compiler.jsb.projects.JsbBuilder.processBuild(JsbBuilder.java:29)
+     at com.sencha.command.build.JsbCommand.execute(JsbCommand.java:15)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+     at java.lang.reflect.Method.invoke(Unknown Source)
+     at com.sencha.util.MethodInvoker$Arguments.invoke(MethodInvoker.java:175)
+     at com.sencha.cli.Command.dispatch(Command.java:43)
+     at com.sencha.cli.Commands.dispatch(Commands.java:64)
+     at com.sencha.command.Sencha.dispatch(Sencha.java:73)
+     at com.sencha.command.Sencha.main(Sencha.java:141)
+     at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+     at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+     at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+     at java.lang.reflect.Method.invoke(Unknown Source)
+     at com.exe4j.runtime.LauncherEngine.launch(Unknown Source)
+     at com.exe4j.runtime.WinLauncher.main(Unknown Source)
+     at com.install4j.runtime.launcher.WinLauncher.main(Unknown Source)
+
