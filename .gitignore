@@ -1,0 +1,8 @@
+
+build/temp/
+
+text\.txt
+
+*.docx
+
+mail_svr/application/logs/

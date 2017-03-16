@@ -1,4 +1,4 @@
-cd D:\webroot\SEDMS2\Mail
+cd C:\xampp\htdocs\SEDMS\Mail
 sencha app build > text.txt
 
-cd D:\webroot\SEDMS2\
+cd C:\xampp\htdocs\SEDMS
