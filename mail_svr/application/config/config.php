@@ -1,8 +1,8 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 
-$config['template_path']	= 'D:/webroot/SEDMS2/template/';
-$config['upload_path']	= 'D:/webroot/SEDMS2/upload/';
+$config['template_path']	= 'C:/xampp/htdocs/SEDMS/template/';
+$config['upload_path']	= 'C:/xampp/htdocs/SEDMS/upload/';
 
 /*$config['template_path']	= 'C:/wamp/www/Mail/template/';
 $config['upload_path']	= 'C:/wamp/www/Mail/upload/';
