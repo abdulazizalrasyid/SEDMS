@@ -16,10 +16,10 @@ Ext.define('Docs.view.surat.window.VerifikasiController', {
 
     onIdKlasifikasiSelect:function(self, records, eOpts){
         me = this;
-        if (records[0].data.kode.length < 8 ){
+        if (records[0].data.kode.length < 6 ){
             Ext.Msg.show({
                 title:'ERROR',
-                message: 'Cek lagi pilihan klasifikasi <br/> <i>kode klasifikasi minimal 6 digit</i>',
+                message: 'Cek lagi pilihan klasifikasi <br/> <i>kode klasifikasi minimal 4 digit</i>',
                 buttons: Ext.Msg.OK,
                 icon: Ext.Msg.ERROR
             });
@@ -36,15 +36,15 @@ Ext.define('Docs.view.surat.window.VerifikasiController', {
         //console.log('before close');
         Ext.globalEvents.fireEvent( 'refreshGridVerifikasi' );
         Ext.globalEvents.fireEvent( 'refreshMenu' );
-        
-    }, 
+
+    },
     onClickCetak:function(){
         var me = this;
         var id_surat = me.lookupReference('id_surat').getValue();
         window.open(serverURL+'cetak/pengantar/?id_surat='+id_surat);
     },
     onClickSimpan:function(){
-        var me=this, 
+        var me=this,
         form =  me.lookupReference('fromstage1').getForm(),
         values = form.getValues();
         win = me.getView();
@@ -71,7 +71,7 @@ Ext.define('Docs.view.surat.window.VerifikasiController', {
                                     icon: Ext.Msg.INFO
                                 });
                                 win.close();
-                                
+
 
                             },
                             failure: function(form, action) {
@@ -81,12 +81,12 @@ Ext.define('Docs.view.surat.window.VerifikasiController', {
                     } else {
                         return false;
                     }
-            }); 
+            });
         }
 
     },
     onClickVerifikasi:function(){
-        var me=this, 
+        var me=this,
         form =  me.lookupReference('fromstage1').getForm(),
         values = form.getValues();
         username = Mail.LoggedInUser.data.username;
@@ -124,9 +124,9 @@ Ext.define('Docs.view.surat.window.VerifikasiController', {
                     } else {
                         return false;
                     }
-            }); 
+            });
         }
 
     }
-    
+
 });

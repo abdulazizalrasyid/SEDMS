@@ -65,45 +65,10 @@ Ext.define("Docs.view.surat.window.Verifikasi",{
                                     id : 'verifikasi',
                                     reference : 'verifikasi',
                                     xtype : 'checkboxfield',
-                                    
-                                },'->',{
-                                    fieldLabel:'Pejabat Verifikasi',
-                                    name:'verification_request_id_jab',
-                                    reference:'verification_request_id_jab',
-                                    xtype:'combobox',
-                                    //flex:1,
-                                    width:400,
-                                    forceSelection:true,
-                                    //displayField: 'klasifikasi',
-                                    displayTpl: Ext.create('Ext.XTemplate',
-                                        '<tpl for=".">',
-                                            '{jabatan}',
-                                        '</tpl>'
-                                    ),
-                                    typeAhead: false,
-                                    hideTrigger:true,
-                                    labelWidth:120,
-                                    valueField: 'id',
-                                    queryMode:'remote',
-                                    minChars:1,
-                                    //allowBlank:false,
-                                    blankText: 'Harus diisi',
-                                    bind:{
-                                        store:'{tujuan_verifikasi}',
-                                        hidden: '{verifikasi.checked}'
-                                    },
-                                    listConfig: {
-                                            loadingText: 'Mencari...',
-                                            emptyText: 'Tidak ditemukan',
-                                            itemSelector: '.select-item',
-                                            // Custom rendering template for each item
-                                            itemTpl: [
-                                                '<div class="select-item">',
-                                                    '{jabatan}',
-                                                '</div>'
-                                            ]
-                                        }
 
+                                },'->',{
+                                  name:'verification_request_id_jab',
+                                  xtype:'hiddenfield'
                                 },{
                                     text:'Cetak Pengantar',iconCls:'icon_print_16',
                                     listeners:{
@@ -114,54 +79,198 @@ Ext.define("Docs.view.surat.window.Verifikasi",{
                                     itemId:'btSend',
                                     bind:{
                                         hidden: '{!verifikasi.checked}'
-                                    },                                    
+                                    },
                                     listeners:{
                                         click:'onClickVerifikasi'
                                     }
-                                },{
-                                    text:'Kirim (verifikasi)',iconCls:'icon_send_16',
-                                    itemId:'btSend2',
-                                    bind:{
-                                        hidden: '{verifikasi.checked}'
-                                    },                                    
-                                    listeners:{
-                                        click:'onClickSimpan'
-                                    }
-                                }/*,{
-                                    text:'Arsipkan',iconCls:'icon_arsip_16',
-                                    itemId:'btArchive',
-                                    bind:{
-                                        hidden: '{verifikasi.checked}'
-                                    },
-                                    listeners:{
-                                        click:'onClickArsipkan'
-                                    }
-                                }*//*,{
-                                    text:'Cetak Pengantar',iconCls:'icon_print_16px',
-                                    listeners:{
-                                        click:'onCetakPengantar'
-                                    }
-                               },*//*,{
-                                    text:'Hapus',iconCls:'icon_del_16',
-                                    reference:'btHapus',
-                                    //hidden:true,
-                                    listeners:{
-                                        click:'onDelete',
-                                    }
-                                },*//*{
-                                    text:'Simpan Draft',iconCls:'icon_save_16px',
-                                    listeners:{
-                                        click:'onClickSimpan'
-                                    }
-                                }*/
+                                }
                             ]
                         }
                     ],
                     items:[
                         {
-                            xtype:'base.MetadataMasuk'
+                            xtype:'fieldset',
+                            title: 'Metadata Surat',
+                            //margin:20,
+                            collapsible: false,
+                            defaultType:'hiddenfield',
+                            items:[
+                               /* {
+                                    name: 'tipe_surat',
+                                    value:'M'
+                                },*/{
+                                    name: 'id_pengolah',
+                                    reference:'id_pengolah'
+                                },{
+                                    name: 'created_by',
+                                    reference:'created_by'
+                                },{
+                                    name: 'tahun',
+                                    reference:'tahun_hidden'
+                                },{
+                                    name: 'no_urut',
+                                    reference:'no_urut'
+                                },{
+                                        xtype:'fieldcontainer',
+                                        layout:'hbox',
+                                        items:[
+                                        {
+                                          fieldLabel:'Kode',
+                                          name:'prefix_kode_klasifikasi',
+                                          xtype:'displayfield',
+                                          flex: 1,labelWidth:150
+                                        },{
+                                            flex: 1,
+                                            xtype:'displayfield',
+                                            labelWidth:150,margin:'0 0 0 5px',
+                                            name: 'tgl_terima',
+                                            fieldLabel:'Tanggal Terima',
+                                            anchor: '50%',
+                                            renderer:Ext.util.Format.dateRenderer('d F Y')
+                                        }]
+                                    },{
+                                      name:'id_klasifikasi'
+                                    },{
+                                      fieldLabel:'Klasifikasi Dokumen',
+                                      name:'kode_klasifikasi',
+                                      xtype:'displayfield'
+                                    },{
+                                        fieldLabel:'Isi Ringkas',
+                                        name:'ringkasan',
+                                        xtype:'displayfield',
+                                        height:50
+                                    },{
+                                        fieldLabel:'Catatan',
+                                        name:'catatan',
+                                        xtype:'displayfield',
+                                        height:50
+                                    }
+                            ]
                         },{
-                            xtype:'base.DetailMasuk'
+                            xtype:'fieldset',
+                            title: 'Detail Surat',
+                            collapsible: false,
+                            defaultType:'textfield',
+                            reference:'secondContainer',
+                            items:[
+                                    {
+                                        fieldLabel:'Perihal',
+                                        name:'perihal',
+                                        xtype:'displayfield'
+                                    },{
+                                        flex: 1,
+                                        xtype:'displayfield',
+                                        labelWidth:150,
+                                        fieldLabel:'Dari',
+                                        name:'asal_surat',
+                                        allowBlank:false,
+                                        blankText: 'Harus diisi'
+                                    },{
+                                        flex: 1,
+                                        xtype:'combo',
+                                        labelWidth:150,
+                                        fieldLabel:'Kepada',
+                                        name:'tujuan_surat',
+                                        //margin:'0 0 0 5px',
+                                        forceSelection:true,
+                                        bind:{
+                                            store:'{pengguna}'
+                                        },
+                                        displayTpl: Ext.create('Ext.XTemplate',
+                                            '<tpl for=".">',
+                                                '{jabatan}',
+                                            '</tpl>'
+                                        ),
+                                        typeAhead: false,
+                                        hideTrigger:true,
+                                        valueField: 'jabatan',
+                                        queryMode:'remote',
+                                        minChars:1,
+                                        allowBlank:false,
+                                        blankText: 'Harus diisi',
+                                        listConfig: {
+                                            loadingText: 'Mencari...',
+                                            emptyText: 'Tidak ditemukan',
+                                            itemSelector: '.select-item',
+                                            // Custom rendering template for each item
+                                            itemTpl: [
+                                                '<div class="select-item">',
+                                                    '{jabatan}',
+                                                '</div>'
+                                            ]
+                                        },
+                                        listeners:{
+                                            select:'onTujuanSelect'
+                                        }
+                                    },{
+                                        xtype:'hiddenfield',
+                                        name:'id_jabatan',
+                                        reference:'id_jabatan'
+                                    },{
+                                        flex: 1,
+                                        xtype:'displayfield',
+                                        labelWidth:150,
+                                        name:'nomor_surat',
+                                        reference:'nomor_surat',
+                                        fieldLabel:'Nomor Surat'
+                                    },{
+                                        flex: 1,
+                                        margin:'0 0 0 5px',
+                                        labelWidth:150,
+                                        fieldLabel:'Tanggal Surat',
+                                        name:'tgl_surat',
+                                        xtype:'displayfield',
+                                        renderer:Ext.util.Format.dateRenderer('d F Y')
+                                    },{
+                                        xtype      : 'fieldcontainer',
+                                        fieldLabel : 'Urgensi',
+                                        defaultType: 'radiofield',
+                                        anchor:'70%',
+                                        defaults: {
+                                            flex: 1
+                                        },
+                                        layout: 'hbox',
+                                        items: [
+                                            {
+                                                boxLabel  : 'Biasa',
+                                                name      : 'urgensi',
+                                                inputValue: 'biasa'
+                                            }, {
+                                                boxLabel  : 'Segera',
+                                                name      : 'urgensi',
+                                                inputValue: 'segera'
+                                            }/*, {
+                                                boxLabel  : 'Sangat Segera',
+                                                name      : 'urgensi',
+                                                inputValue: 'sangatsegera'
+                                            }*/
+                                        ]
+                                    },{
+                                        xtype      : 'fieldcontainer',
+                                        fieldLabel : 'Keamanan',
+                                        defaultType: 'radiofield',
+                                        anchor:'70%',
+                                        defaults: {
+                                            flex: 1
+                                        },
+                                        layout: 'hbox',
+                                        items: [
+                                            {
+                                                boxLabel  : 'Biasa',
+                                                name      : 'sifat',
+                                                inputValue: 'biasa'
+                                            },{
+                                                boxLabel  : 'Rahasia',
+                                                name      : 'sifat',
+                                                inputValue: 'rahasia'
+                                            },{
+                                                boxLabel  : 'Sangat Rahasia',
+                                                name      : 'sifat',
+                                                inputValue: 'sangatrahasia'
+                                            }
+                                        ]
+                                    }
+                            ]
                         }
                     ]
                 },{
@@ -185,7 +294,7 @@ Ext.define("Docs.view.surat.window.Verifikasi",{
                             backgroundColor:'#A0A8D5'
                         }
                     },
-                    items:[ 
+                    items:[
                     {
                             xtype:'grid',
                             defaults: {
