@@ -313,51 +313,111 @@ class Pengguna extends REST_Controller {
 		        daftar rekan kerja untuk tujuan disposisi
 				-----------------------------------------*/
 		        case 'bawahan_3':
+			    
 			    $daftar_jabatan = array();
 	            $i=0;
 
 		        $id_atasan = $this->session->userdata('id_atasan');
 		        $id_jabatan = $this->session->userdata('id_jabatan');
 
-		        //var_dump( $this->session->userdata('id_jabatan') );
+		        if ($id_jabatan=='93'){
+		        	/*rule khusus untuk Karo Umum*/
+		        	$this->db->select('tu_pengguna.fullname, tr_jabatan.id, tr_jabatan.kode_unker, tr_jabatan.jabatan, tr_jabatan.kode_jabatan,tr_jabatan.id_atasan');
+		            $this->db->where('tr_jabatan.id_atasan',$id_atasan);
+		            $this->db->where('tr_jabatan.id !=',$id_jabatan);
+		            //$this->db->where('tu_pengguna.type','pengguna');
+		            $this->db->where('tu_pengguna.deleted_on',null);
+		            $this->db->join('tr_jabatan', 'tr_jabatan.id = tu_pengguna.id_jabatan', 'both');
+		            $query = $this->db->get('tu_pengguna')->result_array();
 
-	            $this->db->select('tu_pengguna.fullname, tr_jabatan.id, tr_jabatan.kode_unker, tr_jabatan.jabatan, tr_jabatan.kode_jabatan,tr_jabatan.id_atasan');
-	            $this->db->where('tr_jabatan.id_atasan',$id_atasan);
-	            $this->db->where('tr_jabatan.id !=',$id_jabatan);
-	            //$this->db->where('tu_pengguna.type','pengguna');
-	            $this->db->where('tu_pengguna.deleted_on',null);
-	            $this->db->join('tr_jabatan', 'tr_jabatan.id = tu_pengguna.id_jabatan', 'both');
-	            $query = $this->db->get('tu_pengguna')->result_array();
+		            
+		            foreach ($query as $value) {
+		            	$daftar_jabatan[$i]['id']=$value['id'];
+			            $daftar_jabatan[$i]['kode_jabatan']=$value['kode_jabatan'];
+			            $daftar_jabatan[$i]['fullname']=$value['fullname'];
+			            $daftar_jabatan[$i]['jabatan']=$value['jabatan'];
+			            $daftar_jabatan[$i]['jabatan_nama']=$value['fullname']." (".$value['kode_jabatan'].")";
+			            $daftar_jabatan[$i]['id_atasan']=$value['id_atasan'];
+			            $daftar_jabatan[$i]['kode_unker']=$value['kode_unker'];
+			            $i=$i+1;
+					}
+		            
+		            $this->db->select('tu_pengguna.fullname, tr_jabatan.id,tr_jabatan.kode_unker, tr_jabatan.jabatan, tr_jabatan.kode_jabatan,tr_jabatan.id_atasan');
+		            $this->db->where('tr_jabatan.id_atasan',$id_jabatan);
+		            //$this->db->where('tu_pengguna.type','pengguna');
+		            $this->db->where('tu_pengguna.deleted_on',null);
+		            $this->db->join('tr_jabatan', 'tr_jabatan.id = tu_pengguna.id_jabatan', 'both');
+		            $query = $this->db->get('tu_pengguna')->result_array();
 
-	            
-	            foreach ($query as $value) {
-	            	$daftar_jabatan[$i]['id']=$value['id'];
-		            $daftar_jabatan[$i]['kode_jabatan']=$value['kode_jabatan'];
-		            $daftar_jabatan[$i]['fullname']=$value['fullname'];
-		            $daftar_jabatan[$i]['jabatan']=$value['jabatan'];
-		            $daftar_jabatan[$i]['jabatan_nama']=$value['fullname']." (".$value['kode_jabatan'].")";
-		            $daftar_jabatan[$i]['id_atasan']=$value['id_atasan'];
-		            $daftar_jabatan[$i]['kode_unker']=$value['kode_unker'];
-		            $i=$i+1;
-				}
-	            
-	            $this->db->select('tu_pengguna.fullname, tr_jabatan.id,tr_jabatan.kode_unker, tr_jabatan.jabatan, tr_jabatan.kode_jabatan,tr_jabatan.id_atasan');
-	            $this->db->where('tr_jabatan.id_atasan',$id_jabatan);
-	            //$this->db->where('tu_pengguna.type','pengguna');
-	            $this->db->where('tu_pengguna.deleted_on',null);
-	            $this->db->join('tr_jabatan', 'tr_jabatan.id = tu_pengguna.id_jabatan', 'both');
-	            $query = $this->db->get('tu_pengguna')->result_array();
+		           	foreach ($query as $value) {
+		            	$daftar_jabatan[$i]['id']=$value['id'];
+			            $daftar_jabatan[$i]['kode_jabatan']=$value['kode_jabatan'];
+			            $daftar_jabatan[$i]['fullname']=$value['fullname'];
+			            $daftar_jabatan[$i]['jabatan']=$value['jabatan'];
+			            $daftar_jabatan[$i]['jabatan_nama']=$value['fullname']." (".$value['kode_jabatan'].")";
+			            $daftar_jabatan[$i]['id_atasan']=$value['id_atasan'];
+			            $daftar_jabatan[$i]['kode_unker']=$value['kode_unker'];
+			            $i=$i+1;
+					}
 
-	           	foreach ($query as $value) {
-	            	$daftar_jabatan[$i]['id']=$value['id'];
-		            $daftar_jabatan[$i]['kode_jabatan']=$value['kode_jabatan'];
-		            $daftar_jabatan[$i]['fullname']=$value['fullname'];
-		            $daftar_jabatan[$i]['jabatan']=$value['jabatan'];
-		            $daftar_jabatan[$i]['jabatan_nama']=$value['fullname']." (".$value['kode_jabatan'].")";
-		            $daftar_jabatan[$i]['id_atasan']=$value['id_atasan'];
-		            $daftar_jabatan[$i]['kode_unker']=$value['kode_unker'];
-		            $i=$i+1;
-				}
+					$this->db->select('tu_pengguna.fullname, tr_jabatan.id,tr_jabatan.kode_unker, tr_jabatan.jabatan, tr_jabatan.kode_jabatan,tr_jabatan.id_atasan');
+		            $this->db->where('tr_jabatan.id_atasan','1');
+		            //$this->db->where('tu_pengguna.type','pengguna');
+		            $this->db->where('tu_pengguna.deleted_on',null);
+		            $this->db->join('tr_jabatan', 'tr_jabatan.id = tu_pengguna.id_jabatan', 'both');
+		            $query = $this->db->get('tu_pengguna')->result_array();
+
+		           	foreach ($query as $value) {
+		            	$daftar_jabatan[$i]['id']=$value['id'];
+			            $daftar_jabatan[$i]['kode_jabatan']=$value['kode_jabatan'];
+			            $daftar_jabatan[$i]['fullname']=$value['fullname'];
+			            $daftar_jabatan[$i]['jabatan']=$value['jabatan'];
+			            $daftar_jabatan[$i]['jabatan_nama']=$value['fullname']." (".$value['kode_jabatan'].")";
+			            $daftar_jabatan[$i]['id_atasan']=$value['id_atasan'];
+			            $daftar_jabatan[$i]['kode_unker']=$value['kode_unker'];
+			            $i=$i+1;
+					}
+
+		        }else{
+			        $this->db->select('tu_pengguna.fullname, tr_jabatan.id, tr_jabatan.kode_unker, tr_jabatan.jabatan, tr_jabatan.kode_jabatan,tr_jabatan.id_atasan');
+		            $this->db->where('tr_jabatan.id_atasan',$id_atasan);
+		            $this->db->where('tr_jabatan.id !=',$id_jabatan);
+
+		            $this->db->where('tu_pengguna.deleted_on',null);
+		            $this->db->join('tr_jabatan', 'tr_jabatan.id = tu_pengguna.id_jabatan', 'both');
+		            $query = $this->db->get('tu_pengguna')->result_array();
+
+		            
+		            foreach ($query as $value) {
+		            	$daftar_jabatan[$i]['id']=$value['id'];
+			            $daftar_jabatan[$i]['kode_jabatan']=$value['kode_jabatan'];
+			            $daftar_jabatan[$i]['fullname']=$value['fullname'];
+			            $daftar_jabatan[$i]['jabatan']=$value['jabatan'];
+			            $daftar_jabatan[$i]['jabatan_nama']=$value['fullname']." (".$value['kode_jabatan'].")";
+			            $daftar_jabatan[$i]['id_atasan']=$value['id_atasan'];
+			            $daftar_jabatan[$i]['kode_unker']=$value['kode_unker'];
+			            $i=$i+1;
+					}
+		            
+		            $this->db->select('tu_pengguna.fullname, tr_jabatan.id,tr_jabatan.kode_unker, tr_jabatan.jabatan, tr_jabatan.kode_jabatan,tr_jabatan.id_atasan');
+		            $this->db->where('tr_jabatan.id_atasan',$id_jabatan);
+
+		            $this->db->where('tu_pengguna.deleted_on',null);
+		            $this->db->join('tr_jabatan', 'tr_jabatan.id = tu_pengguna.id_jabatan', 'both');
+		            $query = $this->db->get('tu_pengguna')->result_array();
+
+		           	foreach ($query as $value) {
+		            	$daftar_jabatan[$i]['id']=$value['id'];
+			            $daftar_jabatan[$i]['kode_jabatan']=$value['kode_jabatan'];
+			            $daftar_jabatan[$i]['fullname']=$value['fullname'];
+			            $daftar_jabatan[$i]['jabatan']=$value['jabatan'];
+			            $daftar_jabatan[$i]['jabatan_nama']=$value['fullname']." (".$value['kode_jabatan'].")";
+			            $daftar_jabatan[$i]['id_atasan']=$value['id_atasan'];
+			            $daftar_jabatan[$i]['kode_unker']=$value['kode_unker'];
+			            $i=$i+1;
+					}
+		        }
+
 
 		        $this->response($daftar_jabatan);
 			    $data['success'] = true;
