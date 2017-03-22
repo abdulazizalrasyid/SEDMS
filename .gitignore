@@ -6,3 +6,9 @@ text\.txt
 *.docx
 
 mail_svr/application/logs/
+
+*.doc
+
+upload/
+
+*.xlsx
