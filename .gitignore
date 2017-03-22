@@ -12,3 +12,5 @@ mail_svr/application/logs/
 upload/
 
 *.xlsx
+
+mail_svr/doc_rendered/
