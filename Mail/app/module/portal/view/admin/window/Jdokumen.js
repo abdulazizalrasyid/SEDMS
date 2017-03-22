@@ -17,7 +17,7 @@ Ext.define("Portal.view.admin.window.Jdokumen",{
         backgroundColor:'#f5f5f5'
     },
     iconCls:'icon_setting_36',
-    title:'Jabatan',
+    title:'Jenis Dokumen',
     listeners:{
         beforeclose:'beforeclose'
     },
@@ -52,7 +52,7 @@ Ext.define("Portal.view.admin.window.Jdokumen",{
                                     xtype : 'checkboxfield'
                                 },'->',{
                                     text:'Simpan',iconCls:'icon_send_16',
-                                    itemId:'btSend2',                                    
+                                    itemId:'btSend2',
                                     listeners:{
                                         click:'onClickSimpan'
                                     }
@@ -61,7 +61,7 @@ Ext.define("Portal.view.admin.window.Jdokumen",{
                         }
                     ],
             items:[
-            //`id`,  `kode_jabatan`,  `id_atasan`,  `jabatan`, 
+            //`id`,  `kode_jabatan`,  `id_atasan`,  `jabatan`,
             // `active`,  `created_on`,  `created_by`,  `edited_on`,  `edited_by`,  `deleted_on`,  `deleted_by`
                 {
                     name:'id',

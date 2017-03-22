@@ -52,7 +52,7 @@ Ext.define("Portal.view.admin.window.Karsip",{
                                     xtype : 'checkboxfield'
                                 },'->',{
                                     text:'Simpan',iconCls:'icon_send_16',
-                                    itemId:'btSend2',                                    
+                                    itemId:'btSend2',
                                     listeners:{
                                         click:'onClickSimpan'
                                     }
@@ -61,7 +61,7 @@ Ext.define("Portal.view.admin.window.Karsip",{
                         }
                     ],
             items:[
-            // `id`,  `kode`,  `klasifikasi`,  `active`,  `waktu_aktif`,  `waktu_inaktif`,  
+            // `id`,  `kode`,  `klasifikasi`,  `active`,  `waktu_aktif`,  `waktu_inaktif`,
             //LEFT(`keterangan`, 256),  `created_on`,  `created_by`,  `edited_on`,  `edited_by`,  `deleted_on`,  `deleted_by`
                 {
                     name:'id',
@@ -89,7 +89,6 @@ Ext.define("Portal.view.admin.window.Karsip",{
                 }*/,{
                     name:'keterangan',
                     fieldLabel:'Keterangan',
-                    allowBlank:false,
                     xtype:'textarea',
                     height:80
                 }
